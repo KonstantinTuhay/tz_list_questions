@@ -1,0 +1,19 @@
+.results__title {
+  font-family: Montserrat;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 58.51px;
+  text-align: left;
+  margin: 80px 0px 20px 0px;
+  width: 886px;
+}
+
+.results__text {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 33.6px;
+  text-align: left;
+  width: 886px;
+  margin-bottom: 40px;
+}

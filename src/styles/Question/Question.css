@@ -1,0 +1,39 @@
+.question-container {
+  margin: 0px auto;
+  font-family: Montserrat, Arial, sans-serif;
+  position: relative;
+}
+
+.testing-title {
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 58.51px;
+  text-align: left;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.questions-box {
+  width: 886px;
+  height: 528px;
+  background-color: #f7f7f7;
+  padding: 40px 40px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.question-text {
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.26px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.options-list {
+  padding: 0;
+}
