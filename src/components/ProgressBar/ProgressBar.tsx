@@ -1,12 +1,15 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { RootState } from "../../redux/store";
+import {
+  selectCurrentIndex,
+  selectQuestions,
+} from "../../redux/selectors/questionSelectors";
 import "../../styles/ProgressBar/ProgressBar.css";
 
 export const ProgressBar: React.FC = () => {
-  const { currentIndex, questions } = useSelector(
-    (state: RootState) => state.questionSLice
-  );
+  const questions = useSelector(selectQuestions);
+  const currentIndex = useSelector(selectCurrentIndex);
+
   const progress = ((currentIndex + 1) / questions.length) * 100;
 
   return (
