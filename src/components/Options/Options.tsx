@@ -15,15 +15,13 @@ export const Options = ({ option }: { option: string }) => {
   };
 
   return (
-    <>
-      <li className="option-item">
-        <input
-          type="radio"
-          className="option-input"
-          onChange={() => handleChange(option)}
-        />
-        <p className="option-text">{option}</p>
-      </li>
-    </>
+    <li className="option-item">
+      <input
+        type="radio"
+        className="option-input"
+        onChange={() => handleChange(option)}
+      />
+      <p className="option-text">{option}</p>
+    </li>
   );
 };

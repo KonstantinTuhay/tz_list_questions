@@ -14,10 +14,8 @@ export const ButtonRepeat = () => {
   };
 
   return (
-    <>
-      <button onClick={handleClick} className="results__button">
-        Пройти ещё раз
-      </button>
-    </>
+    <button onClick={handleClick} className="results__button">
+      Пройти ещё раз
+    </button>
   );
 };
