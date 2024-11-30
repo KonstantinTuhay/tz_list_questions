@@ -28,8 +28,6 @@ const questionSLice = createSlice({
     setQuestions: (state, action: PayloadAction<Question[]>) => {
       state.questions = mixQuestion(
         action.payload.map((question, questionIndex) => {
-          console.log(question);
-
           return {
             ...question,
             index: questionIndex,
