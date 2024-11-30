@@ -21,3 +21,8 @@ export const selectCurrentIndex = createSelector(
   [selectQuestionState],
   (questionSlice) => questionSlice.currentIndex
 );
+
+export const selectIsComplete = createSelector(
+  [selectQuestionState],
+  (questionSlice) => questionSlice.isComplete
+);

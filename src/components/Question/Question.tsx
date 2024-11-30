@@ -4,8 +4,8 @@ import { setQuestions } from "../../redux/slice/questionSLice";
 import { ProgressBar } from "../ProgressBar/ProgressBar";
 import { Options } from "../Options/Options";
 import { dataQuestions } from "../../data/dataQuestions";
-import "../../styles/Question/Question.css";
 import { selectCurrentQuestion } from "../../redux/selectors/questionSelectors";
+import "../../styles/Question/Question.css";
 
 export const Question = (): JSX.Element => {
   const dispatch = useDispatch();
