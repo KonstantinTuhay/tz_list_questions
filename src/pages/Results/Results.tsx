@@ -1,16 +1,18 @@
 import React, { useMemo } from "react";
 import { useSelector } from "react-redux";
-import { RootState } from "../../redux/store";
 import { ButtonRepeat } from "../../components/ButtonRepeat/ButtonRepeat";
 import { ListAnswers } from "../../components/ListAnswers/ListAnswers";
 import { ResultMessage } from "../../components/ResultMessage/ResultMessage";
 import { changeWord } from "../../utils/changeWord";
+import {
+  selectAnswers,
+  selectQuestions,
+} from "../../redux/selectors/questionSelectors";
 import "../../styles/Results/Results.css";
 
 export const Results: React.FC = () => {
-  const { questions, answers } = useSelector(
-    (state: RootState) => state.questionSLice
-  );
+  const answers = useSelector(selectAnswers);
+  const questions = useSelector(selectQuestions);
 
   const isCorrect = useMemo(
     () =>

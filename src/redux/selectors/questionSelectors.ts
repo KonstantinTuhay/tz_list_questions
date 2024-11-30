@@ -26,3 +26,8 @@ export const selectIsComplete = createSelector(
   [selectQuestionState],
   (questionSlice) => questionSlice.isComplete
 );
+
+export const selectAnswers = createSelector(
+  [selectQuestionState],
+  (questionSlice) => questionSlice.answers
+);
