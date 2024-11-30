@@ -1,4 +1,10 @@
-export const dataQuestions = [
+export interface Question {
+  text: string;
+  options: string[];
+  correctAnswer: string;
+}
+
+export const dataQuestions: Question[] = [
   {
     text: "Что такое операционная система?",
     options: [

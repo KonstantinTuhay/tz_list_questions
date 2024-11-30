@@ -1,11 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { mixQuestion } from "../../utils/mixQuestion";
-
-interface Question {
-  text: string;
-  options: string[];
-  correctAnswer: string;
-}
+import { Question } from "../../data/dataQuestions";
 
 interface StateTest {
   questions: Question[];
